@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>壹药网注册页</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	ul,ol,li{list-style:none;}
+	a {text-decoration:none;outline:none; color:#333}
+	img{border:none;}
+	button:focus{outline:none;}
+	.left{float:left;}
+	.over{overflow:hidden;}
+	.right{float:right;}
+	body{font:12px "微软雅黑";}
+	ul,li{list-style:none}
+	
+	.logo{
+		height: 95px;
+		line-height: 95px;
+	}
+	.zhuce_a
+	{
+		width: 100%;
+		background: #fff;
+	}
+	.zhuce_a{
+		width: 930px;
+		height: 750px;
+		margin: 0 auto;
+		margin-top:50px;
+		
+	}
+	.zhuce{
+		border: 1px solid #F1F1F1;
+		height: 480px;
+		width: 890px;
+		padding: 0 20px;
+		margin-bottom:20px;
+		box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+	}
+	.zhuce .title{
+		width: 930px;
+		height: 60px;
+		line-height: 60px;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.title span{
+		margin-left:600px;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	.title a {
+		color:#0083ce;
+	}
+	.title a:hover {
+		text-decoration: underline;
+	}
+	.zhucebox{
+		padding: 0 10px;
+	}
+	.p_1,.p_2{
+		width: 350px;
+		height: 40px;
+		border: 1px solid #707070;
+		text-indent: 30px;
+	}
+	.p_1{
+		background: url(../css/images/usbg.png) no-repeat 3px 6px;
+	}
+	.p_2{
+		background: url(../css/images/passbg.png) no-repeat 5px 6px;
+	}
+	
+	.p_4{
+		display:inline-block;
+		margin-right: 15px;
+	}
+	.p_5{
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    font-size: 14px;
+    width: 350px;
+    height: 40px;
+    color: #fff;
+    border-radius: 1px;
+    background:  #0099F1;
+
+	}
+	.xieyi
+	{
+		font-style: normal;
+		color: #0000FF;
+	}
+	.botton{
+		margin-top: 10px;
+	}
+	.tishi_1,.tishi_2,.tishi_3{
+		width: 350px;
+		height: 34px;
+		line-height: 34px;
+		
+	}
+	.hezuo{
+		margin-top:10px
+	}
+	.dr_lianjie li
+		{
+			float:left;
+			margin-right: 25px;
+			margin-top: 15px;
+		}
+	.foot {
+			width: 1000px;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 28px;
+		}
+	.foot span 
+		{
+			margin: 0 5px
+		}	
+	.foot a:hover
+		{
+			text-decoration: underline;
+		}
+</style>
+<script src="../js/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+	jQuery(function($){
+		var $aimg = $('.dr_lianjie').find('img');
+		 $('.dr_lianjie').on('mouseenter','img',function(){
+		 	$(this).css({
+		 		opacity:'.5',
+		 		filter:'alpha(opacity:50)'
+		 	})
+		 }).on('mouseleave','img',function(){
+		 	$(this).css({
+		 		opacity:'1',
+		 		filter:'alpha(opacity:100)'
+		 	})
+		 })
+	})
+	
+	
+	;jQuery(function($){
+		var val = {};
+		var $tishi_1 = $(".tishi_1");
+		//		焦点处理
+		$('#username').on('focus',function(){
+			
+			$tishi_1.html('用户名是数字和字母下划线及杠组成')
+		}).on('blur',function(){
+			$tishi_1.html('')
+		});
+		$('#username').on('focus',function(){
+			
+			$tishi_1.html('用户名是数字和字母下划线及杠组成')
+		}).on('blur',function(){
+			$tishi_1.html('')
+		})
+		
+		$('.p_5').on('click',function(){
+			//验证用户名
+			var $username = $('#username').val().replace(/(^\s*)|(\s*$)/g,"");
+			if($username == ''){
+				$tishi_1.html('').html('请输入用户名');
+				return false;
+			}else{
+				$.ajax({
+					type:"get",
+					url:"../usermaseeges.json",
+					async:true,
+					dataType:'json',
+					success:function(res){
+						//console.log(res);
+						$.each(res, function() {
+							//console.log(this.username);
+							var $username = $('#username').val();
+							var $rReg = /^[a-z0-9_-]{6,16}$/;
+							$rReg.test($username);
+							if($rReg.test($username) && $username!=this.username){
+								$tishi_1.html('').html('用户名可注册');
+								return false;
+							}else if($rReg.test($username) && $username == this.username){
+								$tishi_1.html('').html('用户名已被注册');
+								return false;
+							}else{
+								$tishi_1.html('').html('用户名不合法！');
+								return false;
+							};	
+						});
+					}
+				});
+			}
+				
+			//验证用户密码
+			var $rpassword= /^[a-z0-9_-]{6,18}$/
+			var $password = $('#password').val();
+			var $tishi_2 = $('.tishi_2')
+			if($password == ''){
+				$tishi_2.html('请输入密码');
+				return false;
+			}else{
+				$rpassword.test($password);
+				if($rpassword.test($password)){
+					$tishi_2.html('').html('')
+				}else{
+					$tishi_2.html('').html('用户密码是数字和字母下划线及杠组成');
+					return false;
+				};
+				var $password_2	 = $('#password_2').val();
+				var $tishi_3  =  $('.tishi_3')
+				if ($password_2 != $password){
+					$tishi_3.html('').html('输入的密码不一致，请重新输入密码!');
+					return false;
+				}else{
+					$tishi_3.html('').html('用户名、密码符合，可以注册');
+					$tishi_1.html('');
+					$tishi_2.html('');
+					//写入cookie
+					val.name = $username;
+					val.password = $password;
+					//console.log(val);
+					//把obj对象转换成字符串
+					document.cookie = $username +"=" +JSON.stringify(val)+"; path=/";
+					var _cookie = document.cookie;
+					//console.log(_cookie);
+					alert('您已经成功注册壹药网会员,现在去登入.')
+					location.href='dengru.html'
+				};
+				
+			};
+			
+		});
+	})
+</script>
+	</head>
+<body>
+<div class="zhuce_a">
+	<div class="logo">
+		<a href="../index.html"><img src="../css/images/logoimg.png"></a>
+	</div>
+	<div class="zhuce">
+		<div class="zhucea">
+			<p class="title">Hi，欢迎注册！<span>我已经注册，现在就<a href="../html/dengru.html">登录</a></span></p>
+			<div class="zhucebox left">
+				<!--用户名-->
+				<p><input type="text" name="username" class="p_1" id="username" placeholder="请输入账号名称" value=''/></p>
+				<div class="tishi_1" style="color:red"></div>
+				<!--密码-->
+				<p><input class="p_2" type="password" name="password" id="password" placeholder="登入密码" value="" /></p>	
+				<div class="tishi_2" style="color:red"></div>
+				<!--再次输入密码-->
+				<p><input class="p_2" type="password" name="password" id="password_2" placeholder="确认密码" value="" /></p>	
+				<div class="tishi_3"></div>
+				<p >
+					<span><input class="p_4" type="checkbox" checked="checked" name="chekbox" id="chekbox" value="" /></span>
+					<span>
+						我已阅读壹药网<cite class="xieyi">《壹药网服务协议》</cite>
+					</span>
+				</p>
+				<p class="botton"><button class="p_5" type="button" name="button" value="确认注册">确认注册</button></p>
+				<div class="hezuo">使用合作伙伴账号登录：</div>
+				<ul class="dr_lianjie">
+					<li>
+						<a href="#"><img src="../css/images/dr_1.png"></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/images/dr_2.png"></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/images/dr_3.png"></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/images/dr_4.png"></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/images/dr_5.png"></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/images/dr_6.png"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="zhuceimg right"
+				<a href="/src/index.html">
+					<img src="../css/images/huod_2.png"/>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		<p>
+			<a href="#">关于1药网 </a><span>|</span>
+			<a href="#">互联网药品交易资格证</a><span>|</span>
+			<a href="#">互联网药品信息服务资格证</a>
+		</p>
+		<p>
+			<a href="#">连锁营业执照</a><span>|</span>
+			<a href="#">药品经营许可证</a><span>|</span>
+			<a href="#">医疗器械许可证</a><span>|</span>
+			<a href="#">食品经营许可证</a><span>|</span>
+			<a href="#">GSP证书</a><span>|</span>
+			<a href="#"> ICP粤B2-20150066</a>
+		</p>
+		<p>
+			Copyright© 1药网 2010-2015， All Rights Reserved
+		</p>
+	</div>
+</div>	
+</body>
+</html>

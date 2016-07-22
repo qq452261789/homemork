@@ -1,0 +1,2528 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的壹药网--商品列表</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="../css/liebiao.css"/>
+	<script src="../js/jquery-1.12.0.js"></script>
+	<script src="../js/liebiao.js"></script>
+	<script src="../js/yuanshengjs.js"></script>
+	<body>
+	<!--------------------头部-------------------->	
+<div id="_top">
+	<div id="top_bd">
+    	<div class="left city-nav" >
+        	<span>送货至</span>
+            <span id="userpriven">
+            	<strong>
+            		<select>
+	            		<option>北京</option>
+	            		<option>上海</option>
+	            		<option>广州</option>
+	            		<option>深圳</option>
+            			<option>重庆</option>
+            		</select>
+            	</strong>
+            </span>
+        </div>
+        <ul id="_top_nav" class="right">
+        	<li class="useridr"></li>
+        	<li>
+                <div class="_top_nav_bg">
+                	<span>|</span>
+                    <a href="#" id="dfrcolor">18820143643；欢迎您</a>
+                    <a href="../src/html/zhuce.html">退出</a>
+                 </div>
+            </li>
+            <li>
+            	<div class="_top_nav_bg">
+                	<span>|</span>
+            		<a href="#">我的订单</a>
+               		
+                </div>
+            </li>
+            <li>
+            	<div class="_top_nav_bg" id="hoverboder">
+                	<span>|</span>
+            		<a href="#" id="uerweb">我的1药网</a>
+                    <div class="xiasanjiao"><img src="../images/sanjiao.png"/></div>
+                    <dl id="uerweblist">
+                    	<dd class="last-style">
+                        	<a href="#">我的1药网</a>
+                        	<div class="shangsanjiao"><img src="../images/shangsanjiao.png"/></div>
+                        </dd>
+                    	<dd><a href="#">我的优惠券</a></dd>
+                        <dd><a href="#">我的收藏夹</a></dd>
+                        <dd><a href="#">商品评价</a></dd>
+                        <dd><a href="#">我的私人定制</a></dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+           		<div class="_top_nav_bg">
+            		<span>|</span>
+            		<a href="#">帮助中心</a>
+                </div>
+            </li>
+            <li>
+            	<div class="_top_nav_bg">
+                	<span>|</span>
+            		<p>400-007-0958</p>
+                    
+                </div>
+            </li>
+            <li>
+            	<div class="_top_nav_bg app">
+                 	<span>|</span>
+                    <div class="shouji"><img src="../images/shouji.png"></div>
+            		<a href="#">手机APP</a>
+                    <div id="weixin">
+                    	<div class="weixin_1 left">
+                        	<div class="left" ><img src="../images/weixin.png"/></div>
+                            <div class="right margin_5" >
+                            	<p>1药网客户端</p>
+								<h4><a href="#">APP首单反10</a></h4>	
+                            </div>
+                        </div>
+                        <div class="weixin_2 left">
+                        	<div class="left"><img src="../images/weixin.png"/></a>
+                            <div class="right  margin_5">
+                            	<p>一诊客户端</p>
+                            	<h4><a href="#">电话咨询专家</a></h4>
+                            	<h4><a href="#">电话咨询专等等家</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li>
+            	<div class="_top_last">
+                    <div class="xingxing"><img src="../images/xingxing.png"></div>
+                    <a href="#">收藏</a>
+                </div>
+            </li>
+        </ul>    
+    </div>
+    <div class="center hdtitle"><a href="#"><img src="../css/images/hdtitle.png"/></a></div>
+ </div>
+</div>
+<!--=======================logo===============================-->
+<div id="logo_a">
+	<div id="logo" class="center">
+		<div class="left logo_l">
+			<h1 class="left"><a href="#" ><img src="../images/logo.png"/></a></h1>
+			<div class="left">
+				<p>好医<span></span>好药<span></span>好健康</p>
+			</div>
+		</div>
+		
+		<div class="left logo_c">
+			<div id="logo_box">
+				<button type="button" value="">搜索</button>
+	        	<input type="text"  placeholder="补肾"/>
+			</div>
+			<div id="logo_box_1">
+				<a href="#" class="addred">夏季爆款低至9.9 </a>
+				<a href="#">西黄丸</a>
+				<a href="#" class="addred">护理液下单立减10元</a>
+				<a href="#">呼吸健康</a>
+				<a href="#" class="addred">面膜</a>
+				<a href="#">脱发</a>
+				<a href="#">玛卡片</a>
+				<a href="#">冈本</a>
+			</div>
+		</div>
+		<div class="right logo_r">
+			<div id="goodscar" class="right">
+				<span>购物车</span><span>></span>
+				<div id="numgoods"> </div>
+				<div id="goodnums"> 0 </div>
+				<div id="carts">
+					<div id="cartishi">
+						<p>您的购物车里还没有商品，如已添加商品，请 <strong><a href="#">登录 </strong></a>。</p>
+					</div>
+				</div>
+			 </div>
+		 </div>
+	</div>
+</div>
+ <!--=======================nav===============================-->
+<div id="nav_a">
+<div id="nav" class="center">
+	<ul>
+		<li><span class="showld">所有商品分类</span></li>
+		<li><a href="#" class="addbg">首页</a></li>
+		<li><a href="#">家庭常备药</a></li>
+		<li><a href="#">抑郁症</a><a href="#">乙肝</a></li>
+		<li><a href="#">性功能障碍</a></li>
+		<li><a href="#">高血压</a></li>
+		<li><a href="#">癫痫</a></li>
+		<li>
+			<a href="#" class="padding_20">海外购</a>
+			<div class="colorblu"></div>
+		</li>
+		<li class="sanjiao1">
+			<a href="#" >掌上1药网
+			</a>
+			<div id="post">
+				<a href="#">连接</a>
+				<a href="#">连接</a>
+				<a href="#">微信、微博</a>
+			</div>
+		</li>
+	</ul>	
+</div>	
+</div> 
+	
+<!--=======================h_main===============================-->	
+<div class="mian_a center">
+	<div class="main_center">
+		<div class="left main_left">
+			<!--------------中西药品列表------------>
+			<div class="ttl">中西药品</div>
+			<ul class=" main_left_ul1">
+				<li>					
+					<p><span></span>滋补调养</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>呼吸道疾病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>男科疾病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>妇科疾病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>风湿骨科</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>皮肤病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>五官科疾病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>消化系统疾病</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>心脑血管</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>肿瘤科</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>肝病科</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>肿瘤科</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>内分泌</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li>
+					<p><span></span>中西药赠品</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+				<li class="lilast">
+					<p><span></span>中西药赠品</p>
+					<ul class="hideconten">
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">找回密码</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!--------------浏览记录标题------------>
+			<div class="ttl ttl_2">浏览记录</div>			
+			<ul class=" main_left_ul2">
+				<li class="fsli">
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_1.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">万通 万通筋骨贴 2贴*3袋 类</div>	
+						<p>￥ 12.8</p>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_2.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">万通 万通筋骨贴 2贴*3袋 类</div>	
+						<p>￥ 12.8</p>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_3.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">万通 万通筋骨贴 2贴*3袋 类</div>	
+						<p>￥ 12.8</p>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_4.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">万通 万通筋骨贴 2贴*3袋 类</div>	
+						<p>￥ 12.8</p>
+					</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_1.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">万通 万通筋骨贴 2贴*3袋 类</div>	
+						<p>￥ 12.8</p>
+					</div>
+					</a>
+				</li>
+				<li class="lastli">
+					<a href="">
+						<div class="puimg_3 left ">
+						<img src="../css/images/jl_2.png"/>
+						<span></span>
+					</div>
+					<div class="right xiangqing">
+						<div class="neirong">江中 健胃消食片 0.8g*8片*4板</div>	
+						<p>￥ 7.8</p>
+					</div>
+					</a>
+				</li>				
+			</ul>
+			<!--------------其他用户看了又看------------>
+			<div class="lb_box">
+				<div class="ttl_3">其他用户看了又看</div>
+				<ul class="main_left_ul3">
+				<li>
+					<a href="">
+						<div class="imgctender">
+							<img src="../css/images/yl_1.jpg"/>
+							<span></span>
+						</div>
+						<div class="neirong_2">
+							<div>太极 川贝枇杷糖浆 180ml</div>
+							<p>¥20.30<span>¥22.3</span></p>
+						</div>	
+					</a>	
+				</li>
+				<li>
+					<a href="">
+						<div class="imgctender">
+							<img src="../css/images/yl_2.jpg"/>
+							<span></span>
+						</div>
+						<div class="neirong_2">
+							<div>联邦舒晶晶（双氯芬酸钠滴眼液） 5ml/盒</div>
+							<p>¥14.20<span>¥19.0</span></p>
+						</div>	
+					</a>	
+				</li>
+				<li>
+					<a href="">
+						<div class="imgctender">
+							<img src="../css/images/yl_3.jpg"/>
+							<span></span>
+						</div>
+						<div class="neirong_2">
+							<div>康福 参梅养胃冲剂 16g*9袋/盒</div>
+							<p>¥16.80<span>¥18.0</span></p>
+						</div>	
+					</a>	
+				</li>
+				<li class="lastli">
+					<a href="">
+						<div class="imgctender">
+							<img src="../css/images/yl_4.jpg"/>
+							<span></span>
+						</div>
+						<div class="neirong_2">
+							<div>安邦 舒筋活血胶囊 0.38g*45粒</div>
+							<p>¥28.00<span>¥35.0</span></p>
+						</div>	
+					</a>	
+				</li>
+			</ul>
+				<div class="morecontane">
+					换一批试试
+				</div>
+			</div>
+		</div>
+		<div class="right main_right">
+			<div class="zybiaoti">
+				<div class="left">
+					中西药品 
+				</div>
+				<p class="right">搜索结果(<span>151631</span>)</p>
+			</div>
+			<div class="seachListBox">
+				<div class="searchResultOp">
+					<dl class="">
+						<dt>品牌：</dt>
+						<dd>
+							<div class="selection">
+								<ul class="filterAttrList">
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+								</ul>
+								<div class="filterBrandListMore">
+									
+								</div>
+							</div>
+						</dd>
+						<dd class="searchOpOperate">
+							<a href="javascript:void(0)">+多选</a>
+						</dd>
+					</dl>
+					<dl class="">
+						<dt>是否进口:</dt>
+						<dd>
+							<div class="selection">
+								<ul class="filterAttrList">
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+								</ul>
+								<div class="filterBrandListMore">
+									
+								</div>
+							</div>
+						</dd>
+						<dd class="searchOpOperate">
+							<a href="javascript:void(0)">+多选</a>
+						</dd>
+					</dl>
+					<dl class="">
+						<dt>药品类别：</dt>
+						<dd>
+							<div class="selection">
+								<ul class="filterAttrList">
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+								</ul>
+								<div class="filterBrandListMore">
+									
+								</div>
+							</div>
+						</dd>
+						<dd class="searchOpOperate">
+							<a href="javascript:void(0)">+多选</a>
+						</dd>
+					</dl>
+					<dl class="lastdl">
+						<dt>剂型：</dt>
+						<dd>
+							<div class="selection">
+								<ul class="filterAttrList">
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+									<li><a href="">东阿阿胶</a></li>
+									<li><a href="">云南白药</a></li>
+									<li><a href="">森福罗</a></li>
+									<li><a href="">同仁堂</a></li>
+									<li><a href="">倍博特</a></li>
+								</ul>
+								<div class="filterBrandListMore">
+									
+								</div>
+							</div>
+						</dd>
+						<dd class="searchOpOperate">
+							<a href="javascript:void(0)">+多选</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="plist over">
+				<div class="rankOp">
+					<ul class="left rank">
+						<li><a href="">综合</a></li>
+						<li><a href=""><span>销量</span></a></li>
+						<li><a href=""><span>评论</span></a></li>
+						<li><a href=""><span>人气</span></a></li>
+						<li><a href=""><span>最新</span></a></li>
+						<li><a href=""><span class="span_bg_a">价格</span></a></li>
+						<li class="price_range">
+							<div>
+								<span>-</span>
+								<p>
+									<input type="" name="" id="" value="" />
+									<input type="" name="" id="" value="" />
+								</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="left rank_2">
+						<li class="left">
+							<input type="checkbox" name="" id="" value="" />
+							<label for="fliter_0">包邮</label>
+						</li>
+					</ul>
+					<ul class="left rank_2">
+						<li class="left">
+							<input type="checkbox" name="" id="" value="" />
+							<label for="fliter_1">自营</label>
+						</li>
+					</ul>
+					<ul class="left rank_2">
+						<li class="left">
+							<input type="checkbox" name="" id="" value="" />
+							<label for="fliter_2">海外购</label>
+						</li>
+					</ul>
+					<ul class="left rank_2">
+						<li class="left">
+							<input type="checkbox" name="" id="" value="" />
+							<label for="fliter_3"><b>6周年活动</b></label>
+						</li>
+					</ul>
+					<ul class="page left">
+						<li class="pageli">
+							<span class="pagenum">
+								1
+							</span>/2216
+							<div class="page_change">
+								<a href="javarscript:void(0)" class="prvepage"></a>
+								<a href="javarscript:void(0)" class="nextpage"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="search_table over" id="seaer_table">
+					<ul class="itemSearchList">
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="itemSearchResultCon">
+								<a href="">
+									<img src="../css/images/li_1.jpg"/>
+								</a>
+								<p class="price_p">
+									<span>28</span>
+									<del>￥34.4</del>
+									<i class="sixyear_mark">
+										6年周庆
+									</i>
+								</p>
+								<p class="title_Box over">
+									<a href="">
+										<span class="list_lable_self">自营</span>
+										 康王 复方酮康唑发用洗剂 100ml专业去屑 止痒 有效治疗头皮糠疹（头屑） 脂溢性皮炎和花斑藓
+									</a>
+								</p>
+								<div class="sell_type_div">
+									<span class="goldseller_name self_name">
+										1药网自营
+									</span>
+									<span class="comment">
+										<a href="">
+											评论<em>1112</em>条
+										</a>
+									</span>
+								</div>
+								<div class="search_list_op buyInfo">
+									<!-------------明天开始----------------->
+									<input type="button" class="search_list_plus_gray"value="-" />
+									<input type="text" class="num"value="1" />
+									<input type="button" class="search_list_plus_gray"value="+" />
+									<input type="button" class="op_right_btn" name="" id="" value="加入购物车" />
+								</div>
+								<div class="taocan_box">
+									<div class="taocan_box_2">
+										<a href="" class="activ_frist">1件<span></span></a>
+										<a href="">套餐1</a>
+										<a href="">套餐2</a>
+										<a href="">套餐3</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="foot_page">
+					<a href="">上一页</a>
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<span class="dot">...</span>
+					<a href="">2170</a>
+					<span class="pagenums">共2170页</span>
+					<span class="pageop go">
+						到第
+						<input type="text" name="" id="" value="" />
+						页
+						<input class="pagebtn" type="button" name="" id="" value="确认" />
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--------------导航列表------------>
+	<div class="dglist">
+	 	<div id="banerlaeft" class="">
+			<ul id="banerlise">
+				<li>
+					<div class="moveli">
+						<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+							<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+							<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+							<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+							<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+							<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+							<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+						<div class="makeimgc">
+							<img src="../images/bignavbg.png" />
+							<span></span>
+						</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+							<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+							<p>中西药品活动</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+						<div class="makeimgc">
+							<img src="../images/bignavbg.png" />
+							<span></span>
+						</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+						<div class="makeimgc">
+							<img src="../images/bignavbg.png" />
+							<span></span>
+						</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+						<div class="makeimgc">
+							<img src="../images/bignavbg.png" />
+							<span></span>
+						</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+		        <li>
+					<div class="moveli">
+						<div class="makeimgc">
+								<img src="../images/bignavbg.png" />
+								<span></span>
+							</div>
+						<p>中西药品</p>
+						<i></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div id="shoulist">
+			<ul class="shoulist">
+				<li>
+					<span>淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的淡淡的</span>
+				</li>
+				<li>
+						<span>淡淡的</span>
+				</li>
+				<li>
+					3
+				</li>
+				<li>
+					4
+				</li>
+				
+				<li>
+					5
+				</li>
+				<li>
+					6
+				</li>
+				<li>
+					7
+				</li>
+				<li>
+					8
+				</li>
+				<li>
+					9
+				</li>
+				<li>
+					10
+				</li>
+			</ul>
+	</div>
+	</div>	
+</div>
+
+<div class="foot_a over">
+<div class="center" id="footer">
+ <!--============foot 2=================-->
+	<div class="foot_2">
+		<ul>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="f2_move">
+					<a>
+						<img  src="../images/f2-1.png"  />
+						<p>权威认证</p>
+					</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!--============foot 3================-->
+	<div class="foot_3 over">
+			<ul>
+				<li>
+					<p>新手入门</p>
+					<p><a href="#">常见问题</a></p>
+					<p><a href="#">新用户注册</a></p>
+					<p><a href="#">用户登入</a></p>
+					<p><a href="#">找回密码</a></p>
+				</li>
+				<li>
+					<p>购物指南</p>
+					<p><a href="#">购物流程</a></p>
+					<p><a href="#">订单状态</a></p>
+					<p><a href="#">隐私声明</a></p>
+					<p><a href="#">发票制度</a></p>
+				</li>
+				<li>
+					<p>配送服务</p>
+					<p><a href="#">范围、时间及费用</a></p>
+					<p><a href="#">商品验货及签收</a></p>
+					<p><a href="#">门店自提</a></p>
+				</li>
+				<li>
+					<p>支付方式</p>
+					<p><a href="#">货到付款</a></p>
+					<p><a href="#">网上支付</a></p>
+					<p><a href="#">银行转账</a></p>
+					<p><a href="#">活动优惠卷</a></p>
+					<p><a href="#">优惠卷试用指南</a></p>
+				</li>
+				<li>
+					<p>艘后服务</p>
+					<p><a href="#">退换货服务</a></p>
+					<p><a href="#">正品保障</a></p>
+					<p><a href="#">退货规则</a></p>
+					<p><a href="#">正品保障</a></p>
+				</li>
+				<li>
+					<p>企业服务</p>
+					<p><a href="#">供应商合作</a></p>
+					<p><a href="#">供应商入口</a></p>
+					<p><a href="#">商家入驻</a></p>
+					<p><a href="#">市场合作</a></p>
+				</li>
+				<li class="txet_ct">
+					<p><a href=""><img src="../images/weixin.png"/></a><p/>
+					<p><a href=""><img src="../images/iphone.png"/></a><p/>
+					<p><a href=""><img src="../images/anz.png"/></a><p/>
+				</li>
+				<li class="txet_ct">
+					<p><a href=""><img src="../images/weixin.png"/></a><p/>
+					<p><a href="">医药网官方微信</a><p/>
+				</li>
+				<li>
+					<p><a href=""><img src="../images/bg_1.png"/></a><p/>
+					
+				</li>
+			</ul>
+		</div>
+		<!--============foot 4=================-->
+	<div class="foot_4">
+		<p>
+			<a href="#">关于1药网 </a><span>|</span>
+			<a href="#">诚征英才</a><span>|</span>
+			<a href="#">直营实体药房</a><span>|</span>
+			<a href="#">互联网药品信息服务资格证</a><span>|</span>
+			<a href="#"> 互联网药品交易资格证：粤C20150007</a>
+		</p>
+		<p>
+			<a href="#">连锁营业执照</a><span>|</span>
+			<a href="#">药品经营许可证</a><span>|</span>
+			<a href="#">医疗器械许可证</a><span>|</span>
+			<a href="#">食品经营许可证</a><span>|</span>
+			<a href="#">GSP证书</a><span>|</span>
+			<a href="#"> ICP粤B2-20150066</a>
+		</p>
+		<ul class="over">
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+			<li><a href="#"><img src="../images/f-a1.png" /></a></li>
+		</ul>
+		<p>
+			1药网网上药店，国家药监局认证通过的合法网上药店，中国医药电子商务行业的开拓者领跑者。粤ICP备12015869号-1
+		</p>
+		<p>
+			公司名称：广东壹号大药房连锁有限公司 公司地址：广东省广州市越秀区共和西路1号2层 联系电话：020-31067218
+		</p>
+		<p>Copyright (C) 2010-2015 1药网版权所有</p>
+	</div>	
+</div>
+</div>
+
+ <!--=======================导航===============================-->
+ <div id="fixnav">
+	<ul id="fixnavul">
+    	<li>
+        	 <cite><a href="#" class="baba">在线咨询</a></cite>
+             <div class="zixun">
+             	<ul id="zixunli">
+                	<li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">售前咨询</a>
+                    </li>  
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">售后咨询</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">团体采购</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">男科妇科</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">糖尿病心</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">脑血管肝胆</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">科神经科</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">科神经科</a>
+                    </li> 
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">营养保健</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">散光验配</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">医疗器械</a>
+                    </li> 
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">营养保健</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">眼耳鼻喉</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">呼吸科</a>
+                    </li> 
+                     <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">皮肤性病</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">肿瘤</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">消化科</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">消化科</a>
+                    </li>
+                    <li>
+                    	<div class="weixinbeij"></div>
+                        <a href="#">消化科</a>
+                    </li>
+                </ul>
+             </div>
+        	<div class="tucanter">
+            	<img src="../images/weixina.png">
+                <span></span>
+            </div>
+        </li>
+        <li>
+        	<i class="goodsnum">0</i>
+        	<cite><a href="#" class="baba">购物车</a></cite>
+        	<div class="tucanter">
+        		<img src="../images/gdcar.png">
+            	<span></span>
+            </div>
+        </li>
+        <li>
+        	<cite><a href="#" class="baba">用户反馈</a></cite>
+        	<div class="tucanter">
+                <img src="../images/liuyanban.png">
+                <span></span>
+             </div>
+        </li>
+        <li class="lastli">
+        	<cite><a href="#" class="baba">返回顶部</a></cite>
+        	<div class="tucanter">
+                <img src="../images/gotop.png">
+                <span></span>
+             </div>
+        </li>
+    </ul>
+</div>
+
+ 
+</body>
+</html>
